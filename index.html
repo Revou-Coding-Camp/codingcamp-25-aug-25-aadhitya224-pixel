@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Company Profile</title>
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <nav>
+      <div class="logo">MyCompany</div>
+      <ul class="nav-links">
+        <li><a href="#home">Home</a></li>
+        <li><a href="#profile">Our Profile</a></li>
+        <li><a href="#message-us">Message Us</a></li>
+      </ul>
+    </nav>
+
+    <header id="home" class="main-section">
+      <h1>Hi <span id="display-name"></span>, Welcome to Our Website</h1>
+      <div class="banner-image">
+        <p>Ini adalah website company profile yang dibuat untuk latihan.</p>
+      </div>
+    </header>
+
+    <main id="profile" class="main-section">
+      <h2>Our Profile</h2>
+      <div class="profile-content">
+        <div class="profile-item">
+          <h3>About Company</h3>
+          <p>Tuliskan deskripsi singkat mengenai perusahaan Anda di sini.</p>
+        </div>
+        <div class="profile-item">
+          <h3>Vision</h3>
+          <p>Tuliskan visi perusahaan Anda di sini.</p>
+        </div>
+        <div class="profile-item">
+          <h3>Mission</h3>
+          <p>Tuliskan misi perusahaan Anda di sini.</p>
+        </div>
+      </div>
+    </main>
+
+    <section id="message-us" class="main-section">
+      <h2>Message Us</h2>
+      <form name="message-form" onsubmit="return validateForm()">
+        <label for="full-name">Name:</label>
+        <input
+          type="text"
+          id="full-name"
+          name="fullName"
+          placeholder="Your Name"
+        />
+
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" placeholder="Your Email" />
+
+        <label for="phone">Phone Number:</label>
+        <input
+          type="tel"
+          id="phone"
+          name="phone"
+          placeholder="Your Phone Number"
+        />
+
+        <label for="message">Message:</label>
+        <textarea
+          id="message"
+          name="message"
+          rows="5"
+          placeholder="Your Message"
+        ></textarea>
+
+        <button type="submit">Submit</button>
+      </form>
+    </section>
+
+    <section id="form-result" class="main-section">
+      <h3>Your Submission:</h3>
+      <p><strong>Name:</strong> <span id="result-name"></span></p>
+      <p><strong>Email:</strong> <span id="result-email"></span></p>
+      <p><strong>Phone:</strong> <span id="result-phone"></span></p>
+      <p><strong>Message:</strong> <span id="result-message"></span></p>
+    </section>
+
+    <footer>
+      <p>Created by Aadhitya</p>
+    </footer>
+
+    <script src="js/script.js"></script>
+  </body>
+</html>
